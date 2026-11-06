@@ -1,0 +1,9 @@
+2026-11-05 12:30:56.813422-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLIENTES" already exists; SQL statement:
+CREATE TABLE clientes (
+    id VARCHAR(36) PRIMARY KEY,
+    nombre VARCHAR(120) NOT NULL,
+    email VARCHAR(180) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    creado_en TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) [42101-224]
